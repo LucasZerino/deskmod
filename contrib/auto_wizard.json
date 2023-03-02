@@ -1,0 +1,76 @@
+{
+    "Token": "secret_token",
+    "CalendarSetup": {
+      "Ip": "localhost"
+    },
+    "TextModuleLocale": {
+      "Locale": "pt-br"
+    },
+    "Users": [
+      {
+        "login": "hans.atila@bolt360.com.br",
+        "firstname": "Hans",
+        "lastname": "Atila",
+        "email": "hans.atila@bolt360.com.br",
+        "organization": "Desk 360",
+        "password": "Z4mm4dr0ckZ!"
+      }
+    ],
+    "Settings": [
+      {
+        "name": "developer_mode",
+        "value": true
+      },
+      {
+        "name": "product_name",
+        "value": "Zammad Demo System"
+      },
+      {
+        "name": "system_online_service",
+        "value": true
+      }
+    ],
+    "EmailAddresses": [
+      {
+        "id": 1,
+        "channel_id": 10,
+        "realname": "Zammad Demo System",
+        "email": "zammad_demo@bolt360.com.br"
+      }
+    ],
+    "Organizations": [
+      {
+        "name": "Desk 360"
+      }
+    ],
+    "Signatures": [
+      {
+        "id": 1,
+        "name": "default",
+        "body": "\n  #{user.firstname} #{user.lastname}\n\n--\n Desk 360\n--"
+      }
+    ],
+    "Channels": [
+      {
+        "id": 10,
+        "area": "Email::Account",
+        "group_id": 1,
+        "options": {
+          "inbound": {
+            "adapter": "imap",
+            "options": {
+              "host": "localhost",
+              "user": "some user",
+              "password": "some pw",
+              "ssl": true
+            }
+          },
+          "outbound": {
+            "adapter": "sendmail"
+          }
+        },
+        "active":false
+      }
+    ]
+  }
+  
