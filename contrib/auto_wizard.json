@@ -1,7 +1,7 @@
 {
     "Token": "secret_token",
     "CalendarSetup": {
-      "Ip": "localhost"
+      "Ip": "127.0.0.1"
     },
     "TextModuleLocale": {
       "Locale": "pt-br"
@@ -59,7 +59,7 @@
           "inbound": {
             "adapter": "imap",
             "options": {
-              "host": "localhost",
+              "host": "127.0.0.1",
               "user": "some user",
               "password": "some pw",
               "ssl": true
